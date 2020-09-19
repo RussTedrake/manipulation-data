@@ -5,6 +5,7 @@ Media and data files associated with the manipulation textbook (in the manipulat
 
 To resize the SVGs I got out of matplotlib, I opened them in Inkscape, ungrouped the main group.  Selected the important objects, and did Edit>Resize Page to Selection.  Then saved.
 
+I've also made a few figures in slides.com by exporting the presentation to pdf, cropping in acrobat, then converting to SVG with pdf2svg.
 
 ## Meshcat animations
 
