@@ -1,6 +1,18 @@
 # manipulation-data
 Media and data files associated with the manipulation textbook (in the manipulation repo)
 
+## matplotlib animations
+
+I've often found myself sneaking into the .html and changing the 
+```
+  <img id="_anim_img662885a6d8854109b9e8a06548563595">
+```
+to 
+```
+  <img style="height:200px" id="_anim_img662885a6d8854109b9e8a06548563595">
+```
+in order to make it fit better in my iframe.
+
 ## SVGs
 
 To resize the SVGs I got out of matplotlib, I opened them in Inkscape, ungrouped the main group.  Selected the important objects, and did Edit>Resize Page to Selection.  Then saved.
