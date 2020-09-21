@@ -3,15 +3,20 @@ Media and data files associated with the manipulation textbook (in the manipulat
 
 ## matplotlib animations
 
-I've often found myself sneaking into the .html and changing the 
+I've been adding a little javascript 
 ```
-  <img id="_anim_img662885a6d8854109b9e8a06548563595">
+    function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+      results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    var height=getParameterByName("height")
+    if (height) {
+      document.getElementById(img_id).style.height = height;
+    }    
 ```
-to 
-```
-  <img style="height:200px" id="_anim_img662885a6d8854109b9e8a06548563595">
-```
-in order to make it fit better in my iframe.
+just after the line starting with `var img_id =` so that I can control the size from the iframe.  Then I pass `?height=240px` into the iframe url.
 
 ## SVGs
 

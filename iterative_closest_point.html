@@ -183,7 +183,7 @@ input[type=range].anim-slider {
 </style>
 
 <div class="animation">
-  <img style="height:240px" id="_anim_img662885a6d8854109b9e8a06548563595">
+  <img id="_anim_img662885a6d8854109b9e8a06548563595">
   <div class="anim-controls">
     <input id="_anim_slider662885a6d8854109b9e8a06548563595" type="range" class="anim-slider"
            name="points" min="0" max="1" step="1" value="0"
@@ -229,6 +229,18 @@ input[type=range].anim-slider {
   /* The IDs given should match those used in the template above. */
   (function() {
     var img_id = "_anim_img662885a6d8854109b9e8a06548563595";
+
+    function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+      results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    var height=getParameterByName("height")
+    if (height) {
+      document.getElementById(img_id).style.height = height;
+    }    
+
     var slider_id = "_anim_slider662885a6d8854109b9e8a06548563595";
     var loop_select_id = "_anim_loop_select662885a6d8854109b9e8a06548563595";
     var frames = new Array(17);
