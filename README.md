@@ -1,6 +1,9 @@
 # manipulation-data
 Media and data files associated with the manipulation textbook (in the manipulation repo)
 
+Note: with two-factor authentication, I need to use the token instead of the password to push to https from the command line.
+
+
 ## matplotlib animations
 
 I've been adding a little javascript 
