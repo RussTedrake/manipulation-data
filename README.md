@@ -49,3 +49,10 @@ When I generate files on colab, i can download them with
 from google.colab import files
 files.download("animation.html")
 ```
+
+## To make collision geometry figures
+
+run drake_visualizer and e.g.
+./bazel-bin/manipulation/util/geometry_inspector --visualize_collisions --find_resource drake/manipulation/models/iiwa_description/urdf/iiwa14_spheres_dense_collision.urdf
+
+I can set the background to white in View->Properties Panel
