@@ -56,7 +56,7 @@
 <polyline fill="none" stroke="#000000" points="377,-139.5 582,-139.5 "/>
 <text text-anchor="middle" x="479.5" y="-124.3" font-family="Times,serif" font-size="14.00" fill="#000000">camera_0_label_image</text>
 <polyline fill="none" stroke="#000000" points="377,-116.5 582,-116.5 "/>
-<text text-anchor="middle" x="479.5" y="-101.3" font-family="Times,serif" font-size="14.00" fill="#000000">pose_bundle</text>
+<text text-anchor="middle" x="479.5" y="-101.3" font-family="Times,serif" font-size="14.00" fill="#000000">query_object</text>
 <polyline fill="none" stroke="#000000" points="377,-93.5 582,-93.5 "/>
 <text text-anchor="middle" x="479.5" y="-78.3" font-family="Times,serif" font-size="14.00" fill="#000000">contact_results</text>
 <polyline fill="none" stroke="#000000" points="377,-70.5 582,-70.5 "/>
