@@ -229,6 +229,16 @@ input[type=range].anim-slider {
   /* The IDs given should match those used in the template above. */
   (function() {
     var img_id = "_anim_img1b03692450744889aa02f0be787dd4c6";
+    function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+      results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    var height=getParameterByName("height")
+    if (height) {
+      document.getElementById(img_id).style.height = height;
+    }    
     var slider_id = "_anim_slider1b03692450744889aa02f0be787dd4c6";
     var loop_select_id = "_anim_loop_select1b03692450744889aa02f0be787dd4c6";
     var frames = new Array(100);
