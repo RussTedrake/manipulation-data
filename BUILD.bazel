@@ -5,6 +5,9 @@
 # Licensed under the BSD 3-Clause License. See LICENSE.TXT for details.
 
 exports_files(
-    ["mustard_bottle.pcd"],
+    [
+      "mustard_bottle.pcd",
+      "box_flipup_ppo_state_3.zip",
+    ],
     visibility = ["//visibility:public"],
 )
