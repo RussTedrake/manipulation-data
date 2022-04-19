@@ -27,6 +27,8 @@ To resize the SVGs I got out of matplotlib `plot.savfig("filename.svg")`, I open
 
 I've also made a few figures in slides.com by exporting the presentation to pdf, cropping in acrobat, then converting to SVG with pdf2svg.
 
+Even for omnigraffle, I've had better luck using Times Italic fonts and exporting to pdf, then converting via pdf2svg.
+
 ## Meshcat animations
 
 To make meshcat animations save to html, the workflow (at least with MeshcatVisualizer) is roughly:
