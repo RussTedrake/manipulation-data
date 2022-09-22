@@ -34,13 +34,12 @@ Even for omnigraffle, I've had better luck using Times Italic fonts and exportin
 To make meshcat animations save to html, the workflow (at least with MeshcatVisualizer) is roughly:
 
 ```
-meshcat.vis['/Background'].set_property("visible", False)
-meshcat.start_recording()
+meshcat.SetProperty('/Background', 'visible', False)
+meshcat.StartRecording()
 simulator.AdvanceTo(args.duration)
-meshcat.stop_recording()
-meshcat.publish_recording(repetitions=np.inf)
+meshcat.PublishRecording()
 f = open("animation.html", "w")
-f.write(meshcat.vis.static_html())
+f.write(meshcat.StaticHtml())
 f.close()
 ```
 
