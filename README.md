@@ -23,7 +23,7 @@ just after the line starting with `var img_id =` so that I can control the size 
 
 ## SVGs
 
-To resize the SVGs I got out of matplotlib `plot.savfig("filename.svg")`, I opened them in Inkscape, ungrouped the main group.  Selected the important objects, and did Edit>Resize Page to Selection.  Then saved.
+To resize the SVGs I got out of matplotlib `plot.savefig("filename.svg")`, I opened them in Inkscape, ungrouped the main group.  Selected the important objects, and did Edit>Resize Page to Selection.  Then saved.  It's useful to remember `plt.rcParams.update({"savefig.transparent": True})`.
 
 I've also made a few figures in slides.com by exporting the presentation to pdf, cropping in acrobat, then converting to SVG with pdf2svg.
 
