@@ -29,6 +29,10 @@ I've also made a few figures in slides.com by exporting the presentation to pdf,
 
 Even for omnigraffle, I've had better luck using Times Italic fonts and exporting to pdf, then converting via pdf2svg.
 
+## Matplotlib animations
+
+I have `AdvanceToAndSaveAnimation` in `underactuated/pyplot_visualizer.py` that shows the way.
+
 ## Meshcat animations
 
 To make meshcat animations save to html, the workflow (at least with MeshcatVisualizer) is roughly:
